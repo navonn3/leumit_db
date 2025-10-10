@@ -1,0 +1,70 @@
+name: Daily Leumit League Update
+
+on:
+  schedule:
+    # Runs at 2:00 AM Israel time (11:00 PM UTC previous day)
+    # Israel is UTC+2 (winter) or UTC+3 (summer DST)
+    # Using 23:00 UTC to catch both scenarios around 2 AM Israel time
+    - cron: '0 23 * * *'
+  
+  # Allow manual trigger from GitHub Actions tab
+  workflow_dispatch:
+
+jobs:
+  update-data:
+    runs-on: ubuntu-latest
+    
+    steps:
+    - name: Checkout repository
+      uses: actions/checkout@v4
+      with:
+        token: ${{ secrets.GITHUB_TOKEN }}
+    
+    - name: Set up Python
+      uses: actions/setup-python@v4
+      with:
+        python-version: '3.11'
+    
+    - name: Install dependencies
+      run: |
+        python -m pip install --upgrade pip
+        pip install -r requirements.txt
+    
+    - name: Create data directories
+      run: |
+        mkdir -p data/leumit/leumit_games
+    
+    - name: Run update script
+      run: |
+        python auto-update-db.py
+      continue-on-error: false
+    
+    - name: Check for changes
+      id: check_changes
+      run: |
+        git config --local user.email "github-actions[bot]@users.noreply.github.com"
+        git config --local user.name "github-actions[bot]"
+        git add data/
+        
+        # Check if there are changes
+        if git diff --staged --quiet; then
+          echo "No changes detected"
+          echo "changes=false" >> $GITHUB_OUTPUT
+        else
+          echo "Changes detected"
+          echo "changes=true" >> $GITHUB_OUTPUT
+        fi
+    
+    - name: Commit and push changes
+      if: steps.check_changes.outputs.changes == 'true'
+      run: |
+        git commit -m "Auto-update: Leumit League data $(date +'%Y-%m-%d %H:%M')"
+        git push
+    
+    - name: Upload log as artifact
+      if: always()
+      uses: actions/upload-artifact@v3
+      with:
+        name: update-log
+        path: data/leumit/update_log.txt
+        retention-days: 7

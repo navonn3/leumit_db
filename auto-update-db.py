@@ -684,7 +684,7 @@ def scrape_player_stats(soup, game_id, team_mapping):
         log_message(f"   ❌ Error parsing player stats: {e}")
         return player_stats
 
-def scrape_team_stats(soup, game_id):
+def scrape_team_stats(soup, game_id, team_mapping):
     """Scrape team statistics"""
     team_stats = []
     
@@ -696,7 +696,9 @@ def scrape_team_stats(soup, game_id):
             if not team_header:
                 continue
             
-            team_name = team_header.text.strip()
+            team_name_raw = team_header.text.strip()
+            team_name = normalize_team_name(team_name_raw, team_mapping)
+
             
             table = section.find('table', class_='sp-event-performance')
             if not table:

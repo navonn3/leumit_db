@@ -793,7 +793,7 @@ def scrape_team_stats(soup, game_id):
         log_message(f"   ❌ Error parsing team stats: {e}")
         return team_stats
 
-def scrape_game_details(game_id):
+def scrape_game_details(game_id, team_mapping):
     """Scrape all details for a single game"""
     game_url = f"https://ibasketball.co.il/match/{game_id}/"
     
@@ -801,9 +801,9 @@ def scrape_game_details(game_id):
     if not soup:
         return None, None, None
     
-    quarters = scrape_quarter_scores(soup, game_id)
-    players = scrape_player_stats(soup, game_id)
-    teams = scrape_team_stats(soup, game_id)
+    quarters = scrape_quarter_scores(soup, game_id, team_mapping)
+    players = scrape_player_stats(soup, game_id, team_mapping)
+    teams = scrape_team_stats(soup, game_id, team_mapping)
     
     return quarters, players, teams
 

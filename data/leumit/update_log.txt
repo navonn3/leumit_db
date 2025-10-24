@@ -2114,3 +2114,152 @@
 [2025-10-23 23:23:04]    ✓ data/leumit/leumit_games/game_quarters.csv (9.1 KB)
 [2025-10-23 23:23:04]    ✓ data/leumit/leumit_games/game_player_stats.csv (60.9 KB)
 [2025-10-23 23:23:04]    ✓ data/leumit/leumit_games/game_team_stats.csv (4.3 KB)
+[2025-10-24 23:20:56] 
+[2025-10-24 23:20:56] ============================================================
+[2025-10-24 23:20:56] LEUMIT LEAGUE AUTO-UPDATE STARTED
+[2025-10-24 23:20:56] ============================================================
+[2025-10-24 23:20:56] 
+📁 Expected output files:
+[2025-10-24 23:20:56]    data/leumit/leumit_player_details.csv
+[2025-10-24 23:20:56]    data/leumit/leumit_player_history.csv
+[2025-10-24 23:20:56]    data/leumit/leumit_player_averages.csv
+[2025-10-24 23:20:56]    data/leumit/leumit_team_averages.csv
+[2025-10-24 23:20:56]    data/leumit/leumit_opponent_averages.csv
+[2025-10-24 23:20:56]    data/leumit/leumit_games/games_schedule.csv
+[2025-10-24 23:20:56]    data/leumit/leumit_games/game_quarters.csv
+[2025-10-24 23:20:56]    data/leumit/leumit_games/game_player_stats.csv
+[2025-10-24 23:20:56]    data/leumit/leumit_games/game_team_stats.csv
+[2025-10-24 23:20:56] ============================================================
+[2025-10-24 23:20:56] STEP 1: UPDATING PLAYER DETAILS
+[2025-10-24 23:20:56] ============================================================
+[2025-10-24 23:20:56] ✅ Loaded team mapping: 16 teams, 25 name variations
+[2025-10-24 23:20:56] Fetching player list...
+[2025-10-24 23:20:56] Found 195 players
+[2025-10-24 23:20:56] [6/195] Scraping: אדר אוליאל (Missing Number)
+[2025-10-24 23:20:58]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:20:58]    ⚠️  No mapping found for team: 'הפועל גליל עליון'
+[2025-10-24 23:20:58] [11/195] Scraping: אור חן (No history data)
+[2025-10-24 23:20:59] [19/195] Scraping: איאן מרטינז (No history data)
+[2025-10-24 23:21:02] [21/195] Scraping: אייל ננקין (No history data)
+[2025-10-24 23:21:05]    ⚠️  No mapping found for team: 'מכבי אשדוד יאשה'
+[2025-10-24 23:21:05] [25/195] Scraping: איליי אלול (No history data)
+[2025-10-24 23:21:08]    ⚠️  No mapping found for team: 'א.ס. רמת השרון'
+[2025-10-24 23:21:08] [26/195] Scraping: איתי זלכה (No history data)
+[2025-10-24 23:21:10]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:21:10]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:21:10]    ⚠️  No mapping found for team: 'מכבי אשדוד יאשה'
+[2025-10-24 23:21:10] [36/195] Scraping: אליה נקר (No history data)
+[2025-10-24 23:21:11] [37/195] Scraping: אליהו כהן (Missing Height)
+[2025-10-24 23:21:14]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:21:14]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:21:14] [42/195] Scraping: אסף דוד פשין (Missing Height)
+[2025-10-24 23:21:17] [43/195] Scraping: אסף כהן (No history data)
+[2025-10-24 23:21:20] [44/195] Scraping: אקסבייר ג'ונסון (No history data)
+[2025-10-24 23:21:22] [45/195] Scraping: אר ג׳יי גלאספר (No history data)
+[2025-10-24 23:21:23] [47/195] Scraping: אריאל ג'אן (Missing Number)
+[2025-10-24 23:21:25]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:21:25] [49/195] Scraping: בן קלהון גולד (No history data)
+[2025-10-24 23:21:28] [50/195] Scraping: בר רוטשטיין (No history data)
+[2025-10-24 23:21:29] [54/195] Scraping: ברנדון וואטרספון (No history data)
+[2025-10-24 23:21:32] [55/195] Scraping: ג'וש אנזיקור (No history data)
+[2025-10-24 23:21:35] [59/195] Scraping: ג'יילן לאמאר הרפר (No history data)
+[2025-10-24 23:21:37]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:21:37]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:21:37] [66/195] Scraping: דווייט וילסון (No history data)
+[2025-10-24 23:21:40]    ⚠️  No mapping found for team: 'א.ס. רמת השרון'
+[2025-10-24 23:21:40] [67/195] Scraping: דויד מוסיס (No history data)
+[2025-10-24 23:21:43]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:21:43] [69/195] Scraping: דיימונד סטון (No history data)
+[2025-10-24 23:21:44] [70/195] Scraping: דימיטרי רוברטס (No history data)
+[2025-10-24 23:21:46]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:21:46] [72/195] Scraping: דין אלינגר (Missing Height)
+[2025-10-24 23:21:47] [79/195] Scraping: דרק ווקר (No history data)
+[2025-10-24 23:21:50] [82/195] Scraping: וינס קול (No history data)
+[2025-10-24 23:21:53] [83/195] Scraping: וסלי האריס (No history data)
+[2025-10-24 23:21:54]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:21:54]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:21:54] [87/195] Scraping: טאז שרמן (No history data)
+[2025-10-24 23:21:56] [88/195] Scraping: טביס סמית (No history data)
+[2025-10-24 23:21:57] [92/195] Scraping: טרה מקולום (No history data)
+[2025-10-24 23:22:00] [96/195] Scraping: יהונתן פלד (No history data)
+[2025-10-24 23:22:02]    ⚠️  No mapping found for team: 'מכבי רמת גן קבוצת כנ'
+[2025-10-24 23:22:02] [103/195] Scraping: יונתן אבולוף (Missing Number)
+[2025-10-24 23:22:05] [104/195] Scraping: יונתן מהרטה (No history data)
+[2025-10-24 23:22:07]    ⚠️  No mapping found for team: 'הפועל ירושלים ב.יהב'
+[2025-10-24 23:22:07]    ⚠️  No mapping found for team: 'אליצור יבנה דנן'
+[2025-10-24 23:22:07] [107/195] Scraping: יותם הנקין (No history data)
+[2025-10-24 23:22:10]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:22:10] [111/195] Scraping: ישמעאל ג'ובא ליין (No history data)
+[2025-10-24 23:22:13] [112/195] Scraping: ליאם ביטון (Missing Number)
+[2025-10-24 23:22:14]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:22:14]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:22:14] [115/195] Scraping: מייקל גרין (No history data)
+[2025-10-24 23:22:16]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:22:16]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:22:16] [129/195] Scraping: ניב אבידן (No history data)
+[2025-10-24 23:22:19]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:22:19] [137/195] Scraping: סי ג'יי ווקר (No history data)
+[2025-10-24 23:22:20]    ⚠️  No mapping found for team: 'א.ס. רמת השרון'
+[2025-10-24 23:22:20] [143/195] Scraping: עומר לוי (No history data)
+[2025-10-24 23:22:23] [146/195] Scraping: עידו בן דוד (Missing Number)
+[2025-10-24 23:22:26]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:22:26]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:22:26]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:22:26] [168/195] Scraping: קיירי בראון (No history data)
+[2025-10-24 23:22:29] [169/195] Scraping: קינדל היל (No history data)
+[2025-10-24 23:22:32] [172/195] Scraping: רוברט טרנר (No history data)
+[2025-10-24 23:22:35] [180/195] Scraping: רזיאל חיון (No history data)
+[2025-10-24 23:22:36]    ⚠️  No mapping found for team: 'הפועל ירושלים ב.יהב'
+[2025-10-24 23:22:36] [182/195] Scraping: רני בלגה (No history data)
+[2025-10-24 23:22:38]    ⚠️  No mapping found for team: 'אליצור שומרון להב'
+[2025-10-24 23:22:38] [183/195] Scraping: רעי הלל (Missing Height)
+[2025-10-24 23:22:39]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:22:39] [188/195] Scraping: שון דליד (No history data)
+[2025-10-24 23:22:42]    Normalized: 'א.ס. אשקלון/קרית גת' → 'מכבי קרית גת'
+[2025-10-24 23:22:42] [190/195] Scraping: שי כהן (No history data)
+[2025-10-24 23:22:45]    ⚠️  No mapping found for team: 'הפועל אסטרל אילת'
+[2025-10-24 23:22:45] ✅ Player details updated
+[2025-10-24 23:22:45]    File: data/leumit/leumit_player_details.csv
+[2025-10-24 23:22:45]    File: data/leumit/leumit_player_history.csv
+[2025-10-24 23:22:45]    Total: 195 | New: 0 | Updated: 48 | Skipped: 147
+[2025-10-24 23:22:45] ============================================================
+[2025-10-24 23:22:45] STEP 2: UPDATING GAME DETAILS
+[2025-10-24 23:22:45] ============================================================
+[2025-10-24 23:22:45] ✅ Loaded team mapping: 16 teams, 25 name variations
+[2025-10-24 23:22:47] ✅ Games schedule updated: 240 games
+[2025-10-24 23:22:47]    Found 19 completed games
+[2025-10-24 23:22:47]    Already scraped: 17 games
+[2025-10-24 23:22:47]    Scraping 2 new games
+[2025-10-24 23:22:47]    [1/2] Game 741622: הפועל מגדל העמק-יזרעאל vs מכבי חיפה גיא נתן
+[2025-10-24 23:22:49]    [2/2] Game 741617: הפועל נווה שאנן חיפה vs עירוני נהריה
+[2025-10-24 23:22:50]    ✅ Saved: data/leumit/leumit_games/game_quarters.csv
+[2025-10-24 23:22:50]    ✅ Saved: data/leumit/leumit_games/game_player_stats.csv
+[2025-10-24 23:22:50]    ✅ Saved: data/leumit/leumit_games/game_team_stats.csv
+[2025-10-24 23:22:50] ✅ Game stats updated: 2 new games scraped
+[2025-10-24 23:22:50] ============================================================
+[2025-10-24 23:22:50] STEP 3: CALCULATING AVERAGES
+[2025-10-24 23:22:50] ============================================================
+[2025-10-24 23:22:50] ✅ Player averages calculated
+[2025-10-24 23:22:50]    File: data/leumit/leumit_player_averages.csv
+[2025-10-24 23:22:50]    Players: 178
+[2025-10-24 23:22:50] ✅ Opponent averages calculated
+[2025-10-24 23:22:50]    File: data/leumit/leumit_opponent_averages.csv
+[2025-10-24 23:22:50]    Teams: 15
+[2025-10-24 23:22:50] ✅ Team averages calculated
+[2025-10-24 23:22:50]    File: data/leumit/leumit_team_averages.csv
+[2025-10-24 23:22:50]    Teams: 15
+[2025-10-24 23:22:50] 
+[2025-10-24 23:22:50] ============================================================
+[2025-10-24 23:22:50] ✅ ALL UPDATES COMPLETED SUCCESSFULLY
+[2025-10-24 23:22:50] ============================================================
+[2025-10-24 23:22:50] 
+📊 Summary of updated files:
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_player_details.csv (13.0 KB)
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_player_history.csv (55.7 KB)
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_player_averages.csv (27.4 KB)
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_team_averages.csv (4.3 KB)
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_opponent_averages.csv (4.1 KB)
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_games/games_schedule.csv (43.3 KB)
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_games/game_quarters.csv (10.4 KB)
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_games/game_player_stats.csv (67.8 KB)
+[2025-10-24 23:22:50]    ✓ data/leumit/leumit_games/game_team_stats.csv (4.8 KB)
